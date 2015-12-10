@@ -1,7 +1,53 @@
 {
-    "hash": "c84a74953772d8c8b5d034f89bd2d03e",
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "0a85760a5a696e2094e981a4daa801f0",
+    "content-hash": "b0f222c6d1445a90efa347773f026f63",
     "packages": [
-
+        {
+            "name": "vclayton/unpecl-oauth",
+            "version": "v0.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vclayton/unpecl-oauth.git",
+                "reference": "f2702b1a6047fd7e6630e340c66206014ea17c5f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vclayton/unpecl-oauth/zipball/f2702b1a6047fd7e6630e340c66206014ea17c5f",
+                "reference": "f2702b1a6047fd7e6630e340c66206014ea17c5f",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-hash": "*",
+                "ext-openssl": "*",
+                "php": ">=5.1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Native PHP drop-in replacement for the PECL OAuth extension",
+            "homepage": "https://github.com/vclayton/unpecl-oauth",
+            "keywords": [
+                "oauth",
+                "pecl"
+            ],
+            "time": "2015-11-05 19:57:58"
+        }
     ],
     "packages-dev": [
         {
@@ -9,26 +55,25 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/lespoilus/spyc.git",
+                "url": "git@github.com:lespoilus/spyc.git",
                 "reference": "5a5bacdef1e514bdbb30701f13d9867140a6a21b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/lespoilus/spyc/zipball/5a5bacdef1e514bdbb30701f13d9867140a6a21b",
+                "url": "https://api.github.com/repos/lespoilus/spyc/zipball/5a5bacdef1e514bdbb30701f13d9867140a6a21b",
                 "reference": "5a5bacdef1e514bdbb30701f13d9867140a6a21b",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.1"
             },
-            "time": "1350301967",
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "files": [
                     "spyc.php"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT License"
             ],
@@ -41,28 +86,33 @@
             "description": "A simple YAML loader/dumper class for PHP",
             "homepage": "https://github.com/lespoius/spyc/",
             "keywords": [
+                "spyc",
                 "yaml",
-                "zf2",
                 "yml",
-                "spyc"
-            ]
+                "zf2"
+            ],
+            "time": "2012-10-15 11:52:47"
         },
         {
             "name": "simpletest/simpletest",
-            "version": "v1.1.6",
+            "version": "v1.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/simpletest/simpletest.git",
-                "reference": "43d947f842b7295c091a57c979a4533d3d6e9212"
+                "reference": "2f8c466c114bdb9c11028a0c3e6d1380ae6a18dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/simpletest/simpletest/zipball/43d947f842b7295c091a57c979a4533d3d6e9212",
-                "reference": "43d947f842b7295c091a57c979a4533d3d6e9212",
+                "url": "https://api.github.com/repos/simpletest/simpletest/zipball/2f8c466c114bdb9c11028a0c3e6d1380ae6a18dc",
+                "reference": "2f8c466c114bdb9c11028a0c3e6d1380ae6a18dc",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.0.5"
+            },
+            "replace": {
+                "lastcraft/simpletest": "self.version",
+                "vierbergenlars/simpletest": "self.version"
             },
             "type": "library",
             "autoload": {
@@ -110,21 +160,23 @@
             "keywords": [
                 "SimpleTest",
                 "code-coverage",
-                "junit",
-                "php",
                 "selenium",
                 "testing",
-                "unit-test",
-                "xunit"
+                "unit-test"
             ],
-            "time": "2013-09-21 21:04:19"
+            "time": "2015-09-21 18:19:52"
         }
     ],
-    "aliases": [
-
-    ],
+    "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
         "lespoilus/spyc": 20
-    }
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.3",
+        "ext-mcrypt": "*"
+    },
+    "platform-dev": []
 }
