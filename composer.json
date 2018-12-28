@@ -7,7 +7,6 @@
     "license": "MIT",
     "require": {
         "php": ">=5.3",
-        "ext-mcrypt": "*",
         "vclayton/unpecl-oauth": "0.5.*"
     },
     "require-dev": {
